@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Apiservice } from 'src/services/api.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pngvalt';
+  constructor(private apiService : Apiservice){
+    this.apiService.get().subscribe();
+  }
+
+ 
 }

@@ -8,7 +8,7 @@ import { Apiservice } from 'src/services/api.service';
 })
 export class AppComponent {
   constructor(private apiService : Apiservice){
-    this.apiService.get().subscribe();
+   
   }
 
  

@@ -7,17 +7,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShareModule } from 'src/share/share.module';
 import { GeneralModule } from './general/general.module';
 import { HomeComponent } from './pages/home/home.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ShareModule,
-    GeneralModule
+    GeneralModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
